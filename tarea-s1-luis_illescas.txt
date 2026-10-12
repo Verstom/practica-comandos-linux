@@ -1,0 +1,125 @@
+    1* mkdir -p ~/proyecto_comandos/documentos ~/proyecto_comandos/imagenes ~/proyecto_comandos/scripts~
+    2  [200~mkdir -p ~/proyecto_comandos/documentos ~/proyecto_comandos/imagenes ~/proyecto_comandos/scripts~
+    3  mkdir -p ~/proyecto_comandos/documentos ~/proyecto_comandos/imagenes ~/proyecto_comandos/scripts
+    4  cd ~/proyecto_comandos
+    5  ls
+    6  echo "Linux permite administrar archivos." > documentos/notas.txt
+    7  echo "El comando mkdir sirve para crear carpetas." >> documentos/notas.txt
+    8  echo "El comando cp permite copiar archivos." >> documentos/notas.txt
+    9  cat documentos/notas.txt
+   10  cp documentos/notas.txt scripts/backup_notas.txt~
+   11  ls scripts
+   12  mv scripts/backup_notas.txt imagenes/
+   13  ls scripts
+   14  ls documentos
+   15  cp scripts/backup_notas.txt imagenes/backup_notas.txt
+   16  ls -lb scripts
+   17  mv 'scripts/backup_notas.txt~' scripts/backup_notas.txt
+   18  ls scripts
+   19  mv scripts/backup_notas.txt imagenes/
+   20  ls imagenes
+   21  cat documentos/notas.txt > documentos/resumen.txt
+   22  cat documentos/resumen.txt
+   23  echo "En esta practica aprendi a trabajar con archivos en Linux." >> documentos/resumen.txt
+   24  cat documentos/resumen.txt
+   25  rm imagenes/backup_notas.txt
+   26  ls imagenes
+   27  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~
+   28  $ ^[[200~mkdir -p ~/proyecto_comandos/documentos ~/proyecto_comandos/imagenes ~/proyecto_comandos/scripts~
+   29  bash: $'\E[200~mkdir': command not found
+   30  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~
+   31  $ ^C
+   32  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~
+   33  $ ^[[200~mkdir -p ~/proyecto_comandos/documentos ~/proyecto_comandos/imagenes ~/proyecto_comandos/scripts~
+   34  bash: $'\E[200~mkdir': command not found
+   35  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~
+   36  $ mkdir^C
+   37  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~
+   38  $ mkdir -p ~/proyecto_comandos/documentos ~/proyecto_comandos/imagenes ~/proyecto_comandos/scripts
+   39  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~
+   40  $ cd ~/proyecto_comandos
+   41  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   42  $ ls
+   43  documentos/  imagenes/  scripts/
+   44  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   45  $ echo "Linux permite administrar archivos." > documentos/notas.txt
+   46  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   47  $ echo "El comando mkdir sirve para crear carpetas." >> documentos/notas.txt
+   48  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   49  $ echo "El comando cp permite copiar archivos." >> documentos/notas.txt
+   50  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   51  $ cat documentos/notas.txt
+   52  Linux permite administrar archivos.
+   53  El comando mkdir sirve para crear carpetas.
+   54  El comando cp permite copiar archivos.
+   55  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   56  $ ^C
+   57  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   58  $ cp documentos/notas.txt scripts/backup_notas.txt~
+   59  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   60  $ ls scripts
+   61  backup_notas.txt~
+   62  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   63  $ mv scripts/backup_notas.txt imagenes/
+   64  mv: cannot stat 'scripts/backup_notas.txt': No such file or directory
+   65  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   66  $ ^C
+   67  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   68  $ ls scripts
+   69  backup_notas.txt~
+   70  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   71  $ ls documentos
+   72  notas.txt
+   73  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   74  $ cp scripts/backup_notas.txt imagenes/backup_notas.txt
+   75  cp: cannot stat 'scripts/backup_notas.txt': No such file or directory
+   76  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   77  $ ls -lb scripts
+   78  total 1
+   79  -rw-r--r-- 1 ASUS 197121 119 Oct 12 09:42 backup_notas.txt~
+   80  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   81  $ mv 'scripts/backup_notas.txt~' scripts/backup_notas.txt
+   82  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   83  $ ls scripts
+   84  backup_notas.txt
+   85  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   86  $ mv scripts/backup_notas.txt imagenes/
+   87  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   88  $ ls imagenes
+   89  backup_notas.txt
+   90  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   91  $ ^C
+   92  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   93  $ cat documentos/notas.txt > documentos/resumen.txt
+   94  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+   95  $
+   96  cat documentos/resumen.txt
+   97  Linux permite administrar archivos.
+   98  El comando mkdir sirve para crear carpetas.
+   99  El comando cp permite copiar archivos.
+  100  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+  101  $ ^C
+  102  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+  103  $ echo "En esta practica aprendi a trabajar con archivos en Linux." >> documentos/resumen.txt
+  104  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+  105  $ cat documentos/resumen.txt
+  106  Linux permite administrar archivos.
+  107  El comando mkdir sirve para crear carpetas.
+  108  El comando cp permite copiar archivos.
+  109  En esta practica aprendi a trabajar con archivos en Linux.
+  110  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+  111  $ ^C
+  112  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+  113  $ rm imagenes/backup_notas.txt
+  114  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+  115  $ ls imagenes
+  116  ASUS@LAPTOP-QIL2E9GJ MINGW64 ~/proyecto_comandos
+  117  $
+  118  cd ~/proyecto_comandos
+  119  ls
+  120  ls documentos
+  121  ls scripts
+  122  ls imagenes
+  123  rmdir imagenes
+  124  ls
+  125  history | tee tarea-s1-nombre_apellido.txt
